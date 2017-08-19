@@ -29,3 +29,4 @@ for DB in ${POSTGRES_DB//,/ }; do
   find "$BACKUP_DIR/weekly"  -maxdepth 1 -mtime +`expr $BACKUP_KEEP_WEEKLY \* 7 + 1`   -name "$DB-*.sql*" -exec rm -rf '{}' ';'
   find "$BACKUP_DIR/monthly" -maxdepth 1 -mtime +`expr $BACKUP_KEEP_MONTHLY \* 31 + 1` -name "$DB-*.sql*" -exec rm -rf '{}' ';'
 done
+
