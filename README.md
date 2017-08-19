@@ -37,11 +37,11 @@ services:
 ## Environment Variables
 
 <dl>
-  <dt>POSTGRES_HOST</dt>
-  <dd><b>REQUIRED</b> Hostname passed to <code>pg_dump</code> command with <code>-h</code>, usually your PostgreSQL container name.</dd>
-
   <dt>POSTGRES_DB</dt>
   <dd><b>REQUIRED</b> One or more database names separated by space or comma, at least one is required. Backups will be performed for each database provided.</dd>
+
+  <dt>POSTGRES_HOST</dt>
+  <dd><b>REQUIRED</b> Hostname passed to <code>pg_dump</code> command with <code>-h</code>, usually your PostgreSQL container name.</dd>
 
   <dt>POSTGRES_PORT</dt>
   <dd>Defaults to <code>5432</code>, passed to <code>pg_dump</code> command with <code>-p</code>.</dd>
