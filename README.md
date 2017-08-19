@@ -1,3 +1,7 @@
+[![Stars](https://img.shields.io/docker/stars/damoti/backup.svg)](https://hub.docker.com/r/damoti/backup/)
+[![Pulls](https://img.shields.io/docker/pulls/damoti/backup.svg)](https://hub.docker.com/r/damoti/backup/)
+[![Build](https://img.shields.io/docker/build/damoti/backup.svg)](https://hub.docker.com/r/damoti/backup/builds/)
+
 # backup
 
 Docker container for backing up PostgreSQL 10.0 databases.
