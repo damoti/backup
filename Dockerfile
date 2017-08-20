@@ -19,5 +19,4 @@ ENV BACKUP_DAILY_HOUR_INTERVAL 4
 
 COPY backup.sh /backup.sh
 
-ENTRYPOINT ["/bin/sh", "-c"]
-CMD ["go-cron -s \"$SCHEDULE\" -- /backup.sh"]
+CMD go-cron -s "$SCHEDULE" -- /backup.sh
